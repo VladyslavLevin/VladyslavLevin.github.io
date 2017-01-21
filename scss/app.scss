@@ -1,0 +1,1759 @@
+@charset 'utf-8';
+
+@import 'settings';
+@import 'foundation';
+@import 'motion-ui';
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import 'C:/Users/Влад/PascoBlog/foundation-icon-font-3/foundation-icons/foundation-icons.css';
+
+
+@include foundation-global-styles;
+//@include foundation-grid;
+@include foundation-flex-grid;
+@include foundation-typography;
+@include foundation-button;
+@include foundation-forms;
+// @include foundation-range-input;
+@include foundation-accordion;
+@include foundation-accordion-menu;
+@include foundation-badge;
+@include foundation-breadcrumbs;
+@include foundation-button-group;
+@include foundation-callout;
+@include foundation-card;
+@include foundation-close-button;
+@include foundation-menu;
+@include foundation-menu-icon;
+@include foundation-drilldown-menu;
+@include foundation-dropdown;
+@include foundation-dropdown-menu;
+@include foundation-responsive-embed;
+@include foundation-label;
+@include foundation-media-object;
+@include foundation-off-canvas;
+@include foundation-orbit;
+@include foundation-pagination;
+@include foundation-progress-bar;
+// @include foundation-progress-element;
+// @include foundation-meter-element;
+@include foundation-slider;
+@include foundation-sticky;
+@include foundation-reveal;
+@include foundation-switch;
+@include foundation-table;
+@include foundation-tabs;
+@include foundation-thumbnail;
+@include foundation-title-bar;
+@include foundation-tooltip;
+@include foundation-top-bar;
+@include foundation-visibility-classes;
+@include foundation-float-classes;
+ @include foundation-flex-classes;
+
+@include motion-ui-transitions;
+@include motion-ui-animations;
+
+
+
+
+@mixin hidden{
+   background-color: rgba(255, 0, 0, 0);
+   border: none;
+
+}
+
+$medium-radius:3rem;
+
+
+#top-menu{
+font-family: 'Montserrat', sans-serif;
+  background: url("C:/Users/Влад/Desktop/SS/foundation-6.3.0-complete/thc13xri_q0-greg-raines.jpg") no-repeat ;
+box-shadow:0 0 0 400px rgba(0, 0, 0, 0.7) inset;
+ background-size: cover;
+ border: none;
+ padding-bottom:2rem;
+ margin-bottom: 0rem;
+
+          .top-menu-button{
+            border-radius: $medium-radius;
+          }
+
+          .avatar{
+            width: 3rem;
+            height: 3rem;
+             border-radius: 180rem
+          }
+
+          .text-white{
+          color:white;
+          }
+
+          #orbited{
+            @include hidden;
+            padding-top:5rem;
+            padding-bottom:0rem;
+            font-family: 'Montserrat', sans-serif;
+          }
+
+          .orbit-card{
+            @include hidden;
+          }
+          
+         button:active{
+        button-fill: hollow;
+          }
+ 
+
+
+
+             .top-bar{
+                         b{
+                        font-family: 'Montserrat', sans-serif;
+                        color:white;
+
+                         }          
+                   a{
+                      padding-left: 0.5rem;
+                      padding-right: 0.5rem;
+                      color:white;
+                    }
+
+                    a:hover{
+                       border-bottom: 1px solid red;
+                       color:white;
+                     }
+                                          
+
+                      }
+
+}
+
+
+
+.top-menu-small{
+  background-color:#1779ba;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#menu_under_orbit{
+font-family: 'Open Sans', sans-serif;
+background-color:white;
+margin-left:0rem;
+margin-right:0rem;
+max-width:100%;
+padding-left:15%;
+margin-bottom:1rem;
+          
+          .menu-text{
+          text-size:5px;
+          }
+
+          .button{
+              border-radius: $medium-radius;
+              background-color:rgb(220,220,220);
+              color:black;
+              margin-right:0.5rem;
+              margin-left:0.5rem;
+              padding-top:0.3rem;
+              padding-bottom:0.3rem;
+
+
+            }
+             .is-active{
+              background-color:white;
+              color:blue;
+              border:1px solid blue;
+              border-radius: $medium-radius;
+            }
+
+          
+}
+.material-icons.md-light { color: white; }
+.material-icons.md-18 { font-size: 14px; }
+.material-icons.md-20 { font-size: 17px; }
+.material-icons.md-23 { font-size: 45px; }
+.material-icons.md-ref { color: blue; }
+.main-row{
+
+  margin-left:15%;
+
+ .first-blog{
+ border-radius:0.3rem;
+        .height-test{
+
+              height:20rem;
+             }
+
+
+              .blog-icon1{
+                 background: url("C:/Users/Влад/Desktop/SS/foundation-6.3.0-complete/thc13xri_q0-greg-raines.jpg") no-repeat ;
+               background-size: cover;
+              height:20rem;
+              color:white;
+
+                          
+                          a{
+                          color:white;
+                          }
+              }
+              .info-user{
+              @include hidden;
+              border-top:1px solid grey;
+                        .avatar{
+                        width: 3rem;
+                        height: 3rem;
+                         border-radius: 180rem;
+
+                         }
+
+
+                      .thumbnail{
+                      border:none;
+                      border-radius: 180px;
+                      }
+
+
+                      i{
+
+                      padding-left:20rem;
+                      color:black;
+                      padding-top:1rem;
+
+                      }
+                      }
+
+              
+    }
+
+    .first-gorizontal{
+    border-radius:0.3rem;
+        .left-img{
+
+        padding-right:0rem;
+        }
+ .height-test{
+
+              height:11rem;
+              padding-left:1rem;
+              padding-right:1rem;
+             }
+
+        .card{
+          height:11rem;
+
+        }
+        .blog-icon1{
+        border-radius:0.3rem 0 0 0.3rem;
+                 background: url("C:/Users/Влад/Desktop/SS/foundation-6.3.0-complete/thc13xri_q0-greg-raines.jpg") no-repeat ;
+               background-size: cover;
+              height:11rem;
+              width:13rem;
+              color:white;
+
+
+                          .for-small-sign{
+
+                           padding-left:0rem;
+                           padding-right:0rem;
+
+                          }
+                          .for-small-cmlike{
+                          padding-left:0rem;
+                           padding-right:0rem;
+                           
+                          }
+                          .for-small-play{
+                          padding-left:0rem;
+                           padding-right:0rem;
+                          }
+
+
+
+
+                          .play-icon{
+                          margin-top:3.5rem;
+                          margin-left:4.5rem;
+                           width:5rem;
+                          }
+                          .bottom-icon{
+                          margin-top:1rem;
+
+                            ul{
+                              padding-left:-4rem;
+
+                            }
+                            .left-text{
+                              padding-left:0rem;
+                              font-size:15px;
+                              margin-right:0rem;
+
+                            }
+                            .mini{
+
+                            font-size: 15px;
+
+                            }
+                            span{
+
+
+                            font-size: 15px;
+                            }
+
+                          }
+                          a{
+                          color:white;
+                          }
+              }
+      
+
+
+              .info-user{
+              border-radius:0 0.3rem 0.3rem 0;
+              @include hidden;
+              border-top:1px solid grey;
+                        .avatar{
+                        width: 3rem;
+                        height: 3rem;
+                         border-radius: 180rem;
+
+                         }
+
+                        a{
+
+                        margin-left:3rem;
+
+                        }
+                      .thumbnail{
+                      border:none;
+                      border-radius: 180px;
+                      }
+
+
+                      i{
+
+                      padding-left:8rem;
+                      color:black;
+                      padding-top:1rem;
+
+                      }
+                      }
+    }
+
+
+    .first-blog-3-vertical{
+border-radius:0.3rem;
+    width:13rem;
+
+
+
+.height-test{
+
+              height:11rem;
+              padding-left:1rem;
+              padding-right:1rem;
+             }
+              .blog-icon1{
+                 background: url("C:/Users/Влад/Desktop/SS/foundation-6.3.0-complete/thc13xri_q0-greg-raines.jpg") no-repeat ;
+               background-size: cover;
+              height:11rem;
+              width:13rem;
+              color:white;
+
+
+                          .for-small-sign{
+
+                           padding-left:0rem;
+                           padding-right:0rem;
+
+                          }
+                          .for-small-cmlike{
+                          padding-left:0rem;
+                           padding-right:0rem;
+                           
+                          }
+                          .for-small-play{
+                          padding-left:0rem;
+                           padding-right:0rem;
+                          }
+
+
+
+
+                          .play-icon{
+                          margin-top:3.5rem;
+                          margin-left:4.5rem;
+                           width:5rem;
+                          }
+                          .bottom-icon{
+                          margin-top:1rem;
+
+                            ul{
+                              padding-left:-4rem;
+
+                            }
+                            .left-text{
+                              padding-left:0rem;
+                              font-size:15px;
+                              margin-right:0rem;
+
+                            }
+                            .mini{
+
+                            font-size: 15px;
+
+                            }
+                            span{
+
+
+                            font-size: 15px;
+                            }
+
+                          }
+                          a{
+                          color:white;
+                          }
+              }
+              .info-user{
+              @include hidden;
+              border-top:1px solid grey;
+                        .avatar{
+                        width: 3rem;
+                        height: 3rem;
+                         border-radius: 180rem;
+
+                         }
+
+
+                      .thumbnail{
+                      border:none;
+                      border-radius: 180px;
+                      }
+
+
+                      i{
+
+                      padding-left:0rem;
+                      color:black;
+                      padding-top:1rem;
+
+                      }
+                      .madia-object-section{
+
+                      padding-left:0rem;
+                      }
+                      }
+
+              
+    }
+    .first-blog-2-vertical{
+border-radius:0.3rem;
+              .height-test{
+
+              height:11rem;
+              padding-left:1rem;
+              padding-right:1rem;
+             }
+              .blog-icon1{
+                 background: url("C:/Users/Влад/Desktop/SS/foundation-6.3.0-complete/thc13xri_q0-greg-raines.jpg") no-repeat ;
+               background-size: cover;
+              
+              
+              color:white;
+
+
+                          .for-small-sign{
+
+                           padding-left:0rem;
+                           padding-right:0rem;
+
+                          }
+                          .for-small-cmlike{
+                          padding-left:0rem;
+                           padding-right:0rem;
+                           
+                          }
+                          .for-small-play{
+                          padding-left:0rem;
+                           padding-right:0rem;
+                          }
+
+
+
+
+                          .play-icon{
+                          margin-top:3.5rem;
+                          margin-left:4.5rem;
+                           width:5rem;
+                          }
+                          .bottom-icon{
+                          margin-top:1rem;
+
+                            ul{
+                              padding-left:-4rem;
+
+                            }
+                            .left-text{
+                              padding-left:0rem;
+                              font-size:15px;
+                              margin-right:0rem;
+
+                            }
+                            .mini{
+
+                            font-size: 15px;
+
+                            }
+                            span{
+
+
+                            font-size: 15px;
+                            }
+
+                          }
+                          a{
+                          color:white;
+                          }
+              }
+              .info-user{
+              @include hidden;
+              border-top:1px solid grey;
+                        .avatar{
+                        width: 3rem;
+                        height: 3rem;
+                         border-radius: 180rem;
+
+                         }
+
+
+                      .thumbnail{
+                      border:none;
+                      border-radius: 180px;
+                      }
+
+
+                      i{
+
+                      padding-left:5rem;
+                      color:black;
+                      padding-top:1rem;
+
+                      }
+                      }
+
+              
+    }
+    .badge{
+      width:2rem;
+      height:2rem;
+      background-color:white;
+      border: 1px solid rgba(0,0,0,0.1);
+        
+        .material-icons.blue { color: blue; }
+
+
+
+}
+  
+
+
+
+  .More-button{
+  margin-bottom:1rem;
+  ul{
+padding-right:1rem;
+}
+            p{
+            margin-bottom:0.5rem;
+            margin-right:0.5rem;
+            color:blue;
+            }
+  }
+}
+
+     
+  
+
+
+
+    #right-menu{
+    border-radius:0.3rem 0 0 0.3rem;
+  width:100%;
+  height:131.7rem;
+  padding-top: 1rem;
+  padding-left:3rem;
+  padding-right:10rem;
+  margin-left:1rem;
+
+                  #search-button{
+                        background-color:rgb(220,220,220);
+                        border-radius:5rem;
+                        display: inline-block;
+                        padding-left: 0.5rem;
+                      padding-right: 0.2rem;
+                      padding-top: 0.2rem;
+                      padding-bottom: 0.2rem;
+                          width:15rem;
+                           height:2.5rem;
+                                            #searh-field-right{
+                                                border:none;
+                                                background-color:rgba(0,0,0,0);
+                                                padding-left: 1rem;
+                                                border-radius:5rem;
+                                                width:12.3rem;
+                                                height:2rem;
+                                                box-shadow:none;
+
+                                              }
+                                              #search-button-right{
+                                                  background-color:magenta;
+                                                  border-radius:180px;
+                                              }
+
+
+                  }
+                  #main-right-table{
+                       border-spacing:0rem;
+
+                                        .right-table{
+                                            background-color:white;
+                                            color:blue;
+                                                                  
+                                          }
+                                          
+
+                                           .table-row-underline-last{
+
+                                            padding-left:0rem;
+                                            padding-right: 0rem;
+                                           }
+
+                  }
+}
+
+
+ .table-row-underline{
+ border-bottom:1px solid  ; 
+ padding-left:0rem;
+ padding-right: 0rem;
+  }
+
+
+.subsribe-menu{
+  padding-top:1rem;
+
+.forms{
+  width:15rem;
+
+
+}
+
+        
+}
+#subsribe-menu-color{
+color:blue;
+margin-top:1rem;
+margin-bottom:1rem;
+}
+
+.hr{
+
+                  .or-word{
+
+                  }
+
+                      .or{
+
+
+                      }
+
+
+}
+
+
+
+.shrink{
+  
+  
+  border-radius:0.3rem;
+  padding-left:0.5rem;
+  padding-right:0.5rem;
+  margin-bottom:0.5rem;
+  margin-left:0.5rem;
+  margin-right:0.5rem;
+  background-color:rgb(220,220,220);
+  color:black;
+
+
+            a{
+            color:black;
+
+            }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.radio-button{
+margin-left:3rem;
+                input[data-toggle] {
+                  display: none; }
+
+                input[data-toggle]:checked + label,
+                input[data-toggle]:checked + label:active {
+                  background-color: white;
+                  border:1px solid blue;
+                  color:blue;
+                 }
+
+
+                #left-btn{
+                  border-radius: 0.3rem 0rem 0rem 0.3rem;
+                margin-right:0rem;
+                }
+                #right-btn{
+                 border-radius: 0rem 0.3rem 0.3rem 0rem;
+
+                }
+}
+.blog-img-right{
+
+  width:3rem;
+  height:3rem;
+}
+.avatar-right-menu{
+  width: 5rem;
+    height: 4rem;
+}
+.img-band{
+  max-width: 100rem;
+  margin-left:0rem;
+  margin-right:0rem;
+}
+.img-band-unit{
+
+padding-left:0rem;
+padding-right:0rem;
+margin-bottom:0rem;
+
+}
+
+.img-band-unit1{
+
+  height:11rem;
+  width:30rem;
+
+}
+#bottom-subcribe{
+   background: url("C:/Users/Влад/Desktop/SS/foundation-6.3.0-complete/thc13xri_q0-greg-raines.jpg") no-repeat ;
+box-shadow:0 0 0 400px rgba(0, 0, 0, 0.7) inset;
+ background-size: cover;
+ border: none;
+
+              .subcribe-menu-paddings{
+
+              padding-top:3rem;
+              padding-bottom: 3rem;
+
+
+              }
+              .subcribe-menu-item{
+              padding-left: 1rem;
+              padding-right:1rem;
+              color:white;
+
+                      .top-menu-button{
+                      border-radius:3rem;
+                      }
+              }
+
+
+              #field-subcribe{
+              background-color:rgba(0,0,0,0);
+              border:1px solid rgba(220,220,220,0.5);
+              border-radius:3rem;
+              color:rgba(220,220,220,0.5);
+
+
+              }
+}
+.footer {
+  background-color: rgba(10,10,10, 0.94);
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 4rem; 
+  padding-left:10rem;
+  padding-right:10rem;
+
+
+
+            h5{
+
+color:white;
+padding-bottom:3rem;
+
+            }
+
+
+
+
+
+
+            }
+
+.footer-acc{
+background-color: rgba(0,0,0,0);
+color:white;
+border:none;
+}
+.footer-form{
+          background-color: rgba(0,0,0,0);
+color:white;
+border:1px solid rgba(220,220,220,0.5);
+border-radius:0.3rem;
+margin-bottom:0.5rem;
+box-shadow:none;
+          }
+.accordion-content{
+   border-top:1px solid rgba(220,220,220,0.5);
+   
+}
+.is-active{
+background-color: rgba(0,0,0,0);
+color:white;
+border:none;
+  
+
+}
+.footer-acc-item{
+border:1px solid rgba(220,220,220,0.5);
+border-radius:0.5rem;
+margin-bottom:0.5rem;
+
+
+
+            .accordion-title{
+            color:white;
+            border:none;
+            }
+
+
+}
+
+p{
+
+  text-align:left;
+}
+.right-menu-post{
+  p{
+
+  }
+margin-bottom:1rem;
+
+}
+.right-menu-post-last{
+  border:none;
+
+}
+.thumb1{
+
+ border: solid 0px #fefefe;
+  border-radius: 180px;
+
+
+}
+.post-right{
+    p{
+    margin-bottom:0rem;
+
+
+    }
+
+
+}
+.twitter-blog{
+color:rgba(220,220,220,0.5);
+p{
+  margin-bottom: 0rem;
+}
+  .p-down{
+  font-size:10px;
+  margin-left:0rem;
+  
+  }
+}
+.bootom-img{
+
+width:5rem;
+
+height:5rem;
+
+
+}
+.img-div-bottom{
+
+  padding-left:0rem;
+  padding-right:0rem;
+  margin:0rem;
+  
+
+}
+.bottom-menu{
+padding-left:10%;
+padding-right:10%;
+
+    a{
+      color:white;
+      font-family: 'Montserrat', sans-serif;
+
+    }
+background-color: rgba(10,10,10, 0.80);
+
+        .input-group{
+        margin-top:1rem;
+                .input-group-label{
+                  background-color:rgba(0,0,0,0);
+                  border:1px solid rgba(220,220,220,0.5);
+                  border-left:none;
+                  border-radius:0 3rem 3rem 0;
+                }
+                .input-group-field{
+                  border-radius:3rem 0 0 3rem;
+                  border:1px solid rgba(220,220,220,0.5);
+                  background-color:rgba(0,0,0,0);
+                  border-right:none;
+                }
+                }
+}
+
+
+
+
+.responsive-main-row{
+  
+.first-blog{
+        .height-test{
+
+              height:20rem;
+             }
+
+
+              .blog-icon1{
+                 background: url("C:/Users/Влад/Desktop/SS/foundation-6.3.0-complete/thc13xri_q0-greg-raines.jpg") no-repeat ;
+               background-size: cover;
+              height:20rem;
+              color:white;
+
+                          
+                          a{
+                          color:white;
+                          }
+              }
+              .info-user{
+              @include hidden;
+              border-top:1px solid grey;
+                        .avatar{
+                        width: 3rem;
+                        height: 3rem;
+                         border-radius: 180rem;
+
+                         }
+
+
+                      .thumbnail{
+                      border:none;
+                      border-radius: 180px;
+                      }
+
+
+                      i{
+
+                      padding-left:20rem;
+                      color:black;
+                      padding-top:1rem;
+
+                      }
+                      }
+
+              
+    }
+
+
+}
+//---------------------------------------------------------------------------------------------------------------------------------------------//-----------------------------------------------------------------------------------------------------------------------------------------------
+.responsive-main{
+  
+  padding:0rem;
+
+
+            .top-menu-responsive{
+              padding:0rem;
+              border-radius:0.5rem;
+
+
+                        .li-title{
+
+                        margin-left:5rem;
+                        }
+                       .top-menu-small{
+                           width:100%;
+
+
+                               }
+              }
+              .under-orbit-responsive{
+              background-color:white;
+              padding-top:0.5rem;
+              padding-bottom:0.5rem;
+                select{
+                margin:0rem;
+                margin-left:0.5rem;
+                margin-right:0.5rem;
+                }
+
+              }
+
+
+
+              .first-blog{
+              margin:1rem;
+
+        .height-test{
+
+              height:13rem;
+             }
+
+
+              .blog-icon1{
+                 background: url("C:/Users/Влад/Desktop/SS/foundation-6.3.0-complete/thc13xri_q0-greg-raines.jpg") no-repeat ;
+               background-size: cover;
+              height:13rem;
+              color:white;
+
+
+
+                          
+                          a{
+                          color:white;
+                          }
+              }
+              .info-user{
+              @include hidden;
+              border-top:1px solid grey;
+                        .avatar{
+                        width: 3rem;
+                        height: 3rem;
+                         border-radius: 180rem;
+
+                         }
+
+
+                      .thumbnail{
+                      border:none;
+                      border-radius: 180px;
+                      }
+
+
+                      .right-dots{
+
+                      padding-left:20%;
+                      color:black;
+                      padding-top:1rem;
+
+                      }
+                      }
+
+              
+    }
+    .first-gorizontal{
+    margin:1rem;
+        .left-img{
+        padding-right:0rem;
+        width:50%
+        }
+ .height-test{
+
+              height:8rem;
+              
+              padding-right:3rem;
+             }
+
+        .card{
+          height:8rem;
+                .card-section{
+                padding:0.3rem;
+                }
+                .card-divider{
+                padding:0.3rem;
+                }
+
+        }
+        .blog-icon1{
+                 background: url("C:/Users/Влад/Desktop/SS/foundation-6.3.0-complete/thc13xri_q0-greg-raines.jpg") no-repeat ;
+               background-size: cover;
+              height:8rem;
+              
+              color:white;
+
+
+                          .for-small-sign{
+
+                           padding-left:0rem;
+                           padding-right:0rem;
+
+                          }
+                          .for-small-cmlike{
+                          padding-left:0rem;
+                           padding-right:0rem;
+                           
+                          }
+                          .for-small-play{
+                          padding-left:0rem;
+                           padding-right:0rem;
+                          }
+
+
+
+
+                          .play-icon{
+                          margin-top:3.5rem;
+                          margin-left:4.5rem;
+                           width:5rem;
+                          }
+                          .bottom-icon{
+                          margin-top:1rem;
+
+                            
+                            .left-text{
+                              padding-left:0rem;
+                              font-size:15px;
+                              margin-right:0rem;
+
+                            }
+                            .mini{
+
+                            font-size: 15px;
+
+                            }
+                            span{
+
+
+                            font-size: 15px;
+                            }
+
+                          }
+                          a{
+                          color:white;
+                          }
+              }
+              .info-user{
+              @include hidden;
+              border-top:1px solid grey;
+                        .avatar{
+                        width: 3rem;
+                        height: 3rem;
+                         border-radius: 180rem;
+
+                         }
+
+                        a{
+
+                        margin-left:0rem;
+
+                        }
+                      .thumbnail{
+                      border:none;
+                      border-radius: 180px;
+                      }
+                      p{
+                      font-size:10px;
+                      }
+
+                      i{
+
+                      
+                      color:black;
+                      padding-top:1rem;
+
+                      }
+                      }
+}
+
+
+
+
+.c1{
+padding:0rem;
+.first-blog-2-vertical{
+margin-left:1rem;
+margin-right:0.5rem;
+              .height-test{
+
+              height:8rem;
+              
+             }
+              .blog-icon1{
+                 background: url("C:/Users/Влад/Desktop/SS/foundation-6.3.0-complete/thc13xri_q0-greg-raines.jpg") no-repeat ;
+               background-size: cover;
+              
+              
+              color:white;
+
+
+                          .for-small-sign{
+
+                           padding-left:0rem;
+                           padding-right:0rem;
+
+                          }
+                          .for-small-cmlike{
+                          padding-left:0rem;
+                           padding-right:0rem;
+                           
+                          }
+                          .for-small-play{
+                          padding-left:0rem;
+                           padding-right:0rem;
+                          }
+
+
+
+
+                          .play-icon{
+                          margin-top:3.5rem;
+                          margin-left:4.5rem;
+                           width:5rem;
+                          }
+                          .bottom-icon{
+                          margin-top:1rem;
+
+                            ul{
+                              padding-left:-4rem;
+
+                            }
+                            .left-text{
+                              padding-left:0rem;
+                              font-size:15px;
+                              margin-right:0rem;
+
+                            }
+                            .mini{
+
+                            font-size: 15px;
+
+                            }
+                            span{
+
+
+                            font-size: 15px;
+                            }
+
+                          }
+                          a{
+                          color:white;
+                          }
+              }
+              .info-user{
+              @include hidden;
+              border-top:1px solid grey;
+                        .avatar{
+                        width: 3rem;
+                        height: 3rem;
+                         border-radius: 180rem;
+
+                         }
+
+                        a{
+
+                        margin-left:0rem;
+
+                        }
+                      .thumbnail{
+                      border:none;
+                      border-radius: 180px;
+                      }
+                      p{
+                      font-size:10px;
+                      }
+
+                      i{
+
+                      
+                      color:black;
+                      padding-top:1rem;
+
+                      }
+                      }
+}
+.icon{
+margin:1rem;
+margin-right:0.5rem;
+.height-test{
+
+              height:8rem;
+              
+             }
+.blog-icon1{
+                 background: url("C:/Users/Влад/Desktop/SS/foundation-6.3.0-complete/thc13xri_q0-greg-raines.jpg") no-repeat ;
+               background-size: cover;
+              
+              
+              color:white;
+
+
+                          .for-small-sign{
+
+                           padding-left:0rem;
+                           padding-right:0rem;
+
+                          }
+                          .for-small-cmlike{
+                          padding-left:0rem;
+                           padding-right:0rem;
+                           
+                          }
+                          .for-small-play{
+                          padding-left:0rem;
+                           padding-right:0rem;
+                          }
+
+
+
+
+                          .play-icon{
+                          margin-top:3.5rem;
+                          margin-left:4.5rem;
+                           width:5rem;
+                          }
+                          .bottom-icon{
+                          margin-top:1rem;
+
+                            ul{
+                              padding-left:-4rem;
+
+                            }
+                            .left-text{
+                              padding-left:0rem;
+                              font-size:15px;
+                              margin-right:0rem;
+
+                            }
+                            .mini{
+
+                            font-size: 15px;
+
+                            }
+                            span{
+
+
+                            font-size: 15px;
+                            }
+
+                          }
+                          a{
+                          color:white;
+                          }
+              }
+              }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.c2{
+padding:0rem;
+.first-blog-2-vertical{
+margin-left:0.5rem;
+margin-right:1rem;
+margin-top:1rem;
+              .height-test{
+
+              height:8rem;
+              
+             }
+              .blog-icon1{
+                 background: url("C:/Users/Влад/Desktop/SS/foundation-6.3.0-complete/thc13xri_q0-greg-raines.jpg") no-repeat ;
+               background-size: cover;
+              
+              
+              color:white;
+
+
+                          .for-small-sign{
+
+                           padding-left:0rem;
+                           padding-right:0rem;
+
+                          }
+                          .for-small-cmlike{
+                          padding-left:0rem;
+                           padding-right:0rem;
+                           
+                          }
+                          .for-small-play{
+                          padding-left:0rem;
+                           padding-right:0rem;
+                          }
+
+
+
+
+                          .play-icon{
+                          margin-top:3.5rem;
+                          margin-left:4.5rem;
+                           width:5rem;
+                          }
+                          .bottom-icon{
+                          margin-top:1rem;
+
+                            ul{
+                              padding-left:-4rem;
+
+                            }
+                            .left-text{
+                              padding-left:0rem;
+                              font-size:15px;
+                              margin-right:0rem;
+
+                            }
+                            .mini{
+
+                            font-size: 15px;
+
+                            }
+                            span{
+
+
+                            font-size: 15px;
+                            }
+
+                          }
+                          a{
+                          color:white;
+                          }
+              }
+              .info-user{
+              @include hidden;
+              border-top:1px solid grey;
+                        .avatar{
+                        width: 3rem;
+                        height: 3rem;
+                         border-radius: 180rem;
+
+                         }
+
+                        a{
+
+                        margin-left:0rem;
+
+                        }
+                      .thumbnail{
+                      border:none;
+                      border-radius: 180px;
+                      }
+                      p{
+                      font-size:10px;
+                      }
+
+                      i{
+
+                      
+                      color:black;
+                      padding-top:1rem;
+
+                      }
+                      }
+}
+.icon-2{
+margin-right:1rem;
+margin-left:0.5rem;
+}
+.height-test{
+
+              height:8rem;
+              
+             }
+.blog-icon1{
+                 background: url("C:/Users/Влад/Desktop/SS/foundation-6.3.0-complete/thc13xri_q0-greg-raines.jpg") no-repeat ;
+               background-size: cover;
+              
+              
+              color:white;
+
+
+                          .for-small-sign{
+
+                           padding-left:0rem;
+                           padding-right:0rem;
+
+                          }
+                          .for-small-cmlike{
+                          padding-left:0rem;
+                           padding-right:0rem;
+                           
+                          }
+                          .for-small-play{
+                          padding-left:0rem;
+                           padding-right:0rem;
+                          }
+
+
+
+
+                          .play-icon{
+                          margin-top:3.5rem;
+                          margin-left:4.5rem;
+                           width:5rem;
+                          }
+                          .bottom-icon{
+                          margin-top:1rem;
+
+                            ul{
+                              padding-left:-4rem;
+
+                            }
+                            .left-text{
+                              padding-left:0rem;
+                              font-size:15px;
+                              margin-right:0rem;
+
+                            }
+                            .mini{
+
+                            font-size: 15px;
+
+                            }
+                            span{
+
+
+                            font-size: 15px;
+                            }
+
+                          }
+                          a{
+                          color:white;
+                          }
+                }
+              }
+  
+
+
+
+
+ .icon-big{
+ margin:1rem;
+ .height-test{
+
+              height:13rem;
+             }
+ .blog-icon1{
+                 background: url("C:/Users/Влад/Desktop/SS/foundation-6.3.0-complete/thc13xri_q0-greg-raines.jpg") no-repeat ;
+               background-size: cover;
+              height:13rem;
+              color:white;
+
+
+
+                          
+                          a{
+                          color:white;
+                          }
+              }
+
+  }
+
+
+}
+
+
+
+.footer-mobile{
+
+        .info{
+                padding:1rem;
+                background-color: rgba(10,10,10, 0.94);
+
+                    h1{
+                      color:white;
+                    }
+                    p{
+                    color:rgba(220,220,220,0.5);
+                    }
+                    .button{
+                    border-radius:3rem;
+                    background-color:rgba(220,220,220,0.5);
+                    color:white;
+                    }
+}
+          .table{
+          background-color: rgba(10,10,10, 0.94);
+          border:none;
+          padding:1rem;
+            h1{
+            color:white;
+            }
+
+          #main-right-table{
+
+                        border:none;
+                       border-spacing:0rem;
+
+                                        .right-table{
+                                            background-color: rgba(10,10,10, 0.94);
+                                            color:white;
+                                                                  
+                                          }
+                                          
+
+                                           .table-row-underline-last{
+                                           background-color: rgba(10,10,10, 0.94);
+                                            padding-left:0rem;
+                                            padding-right: 0rem;
+                                            color:rgba(220,220,220,0.5);
+                                           }
+                                            .table-row-underline{
+
+                                             border-bottom:1px solid  ; 
+                                             padding-left:0rem;
+                                             padding-right: 0rem;
+                                             background-color: rgba(10,10,10, 0.94);
+                                             color:rgba(220,220,220,0.5);
+                                           }
+
+                  }
+          }
+
+
+          .tags{
+          background-color:rgba(10,10,10, 0.94);
+          padding:1rem;
+          h1{
+          margin-right:1rem;
+            color:white;
+            }
+            .shrink{
+  
+  border:1px solid rgba(220,220,220,0.5);
+  border-radius:0.3rem;
+  padding-left:0.5rem;
+  padding-right:0.5rem;
+  margin-bottom:0.5rem;
+  margin-left:0.5rem;
+  margin-right:0.5rem;
+  background-color:rgba(10,10,10, 0.40);
+  
+
+
+            a{
+            color:white;
+
+            }
+  }
+
+
+
+
+          }
+
+
+
+          .flickr{
+          h1{
+          color:white;
+          }
+           background-color: rgba(10,10,10, 0.94);
+           padding:1rem;
+
+                img{
+                width:15rem;
+                height:8rem;
+                border:none;
+                }
+
+          }
+} 
+
+
+.socials{
+     background-color: rgba(10,10,10, 0.80);
+     padding-top:0rem;
+           padding-left:1rem;
+           padding-right:1rem;
+           padding-bottom:1rem;
+      i{
+      padding:1rem;
+      }
+
+}
+.copyrights{
+  
+  color:rgba(220,220,220,0.5);
+  background-color:rgba(10,10,10, 0.80);
+}
+
+
+
+.reveal{
+padding:0rem;
+padding-top:15%;
+.modal{
+max-width:100%;
+ 
+  margin:none;
+}
+}
+
+.top-icon-bar{
+  background-color:black;
+  height:3rem;
+}
+
+
+.top-icon-bar-responsive{
+  background-color:#00008B;
+}
+
+.flickr-icons{
+  h5{
+  padding-bottom:0rem;
+  }
+}
